@@ -10,10 +10,10 @@
 		BD38E5CF25AFE7D300D51994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5CE25AFE7D300D51994 /* AppDelegate.swift */; };
 		BD38E5D125AFE7D300D51994 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5D025AFE7D300D51994 /* SceneDelegate.swift */; };
 		BD38E5D325AFE7D300D51994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5D225AFE7D300D51994 /* ViewController.swift */; };
-		BD38E5D625AFE7D300D51994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38E5D425AFE7D300D51994 /* Main.storyboard */; };
 		BD38E5D825AFE7D400D51994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD38E5D725AFE7D400D51994 /* Assets.xcassets */; };
 		BD38E5DB25AFE7D400D51994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38E5D925AFE7D400D51994 /* LaunchScreen.storyboard */; };
 		BD38E5FD25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5FC25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift */; };
+		BD38E61925B00E1100D51994 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E61825B00E1100D51994 /* UIColor.swift */; };
 		C39459EB3DCD096B4FBC5FC1 /* Pods_NemoNemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A551A428578A7FB1F0FE02B /* Pods_NemoNemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,6 @@
 		BD38E5CE25AFE7D300D51994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD38E5D025AFE7D300D51994 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD38E5D225AFE7D300D51994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD38E5D525AFE7D300D51994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD38E5D725AFE7D400D51994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD38E5DA25AFE7D400D51994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD38E5DC25AFE7D400D51994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		BD38E60325AFF4A300D51994 /* NEXONLv1GothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicBold.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicBold.ttf"; sourceTree = "<group>"; };
 		BD38E60425AFF4A300D51994 /* NEXONLv1GothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicLight.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicLight.ttf"; sourceTree = "<group>"; };
 		BD38E60525AFF4A300D51994 /* NEXONLv1GothicRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicRegular.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicRegular.ttf"; sourceTree = "<group>"; };
+		BD38E61825B00E1100D51994 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DF9D5E92A3CB44AD40688A4A /* Pods-NemoNemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemoNemo.release.xcconfig"; path = "Target Support Files/Pods-NemoNemo/Pods-NemoNemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BD38E5FC25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift */,
+				BD38E61825B00E1100D51994 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -160,7 +161,6 @@
 		BD38E5EB25AFE8B400D51994 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				BD38E5D425AFE7D300D51994 /* Main.storyboard */,
 				BD38E5D925AFE7D400D51994 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -241,7 +241,6 @@
 			files = (
 				BD38E5DB25AFE7D400D51994 /* LaunchScreen.storyboard in Resources */,
 				BD38E5D825AFE7D400D51994 /* Assets.xcassets in Resources */,
-				BD38E5D625AFE7D300D51994 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,20 +297,13 @@
 				BD38E5FD25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift in Sources */,
 				BD38E5CF25AFE7D300D51994 /* AppDelegate.swift in Sources */,
 				BD38E5D125AFE7D300D51994 /* SceneDelegate.swift in Sources */,
+				BD38E61925B00E1100D51994 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD38E5D425AFE7D300D51994 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD38E5D525AFE7D300D51994 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD38E5D925AFE7D400D51994 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
 				INFOPLIST_FILE = NemoNemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
 				INFOPLIST_FILE = NemoNemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
