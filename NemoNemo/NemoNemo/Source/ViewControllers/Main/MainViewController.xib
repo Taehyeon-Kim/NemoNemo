@@ -16,7 +16,7 @@
                 <outlet property="dailyMemoCount" destination="S3q-N8-nxF" id="97M-Vn-a4t"/>
                 <outlet property="dailyMemoTitleLabel" destination="q7q-TL-zzo" id="MQV-xy-7qn"/>
                 <outlet property="entitleLabel" destination="Vd6-W4-KcY" id="QjH-La-Ekp"/>
-                <outlet property="memoTableView" destination="SCn-OP-d0Q" id="6H1-w2-aVF"/>
+                <outlet property="memoTableView" destination="3Ez-xE-e0z" id="AAj-eE-cEP"/>
                 <outlet property="memoTotalCount" destination="Igw-ap-jpi" id="6VU-DD-zQX"/>
                 <outlet property="nickNameLabel" destination="UYl-fh-n72" id="5K4-MG-Aqr"/>
                 <outlet property="progressBarEndPoint" destination="flK-u1-5hC" id="9ov-po-AOX"/>
@@ -148,7 +148,7 @@
                                 </stackView>
                             </subviews>
                         </stackView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="runningManPink" translatesAutoresizingMaskIntoConstraints="NO" id="jaX-4r-f96">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="runningManBlack" translatesAutoresizingMaskIntoConstraints="NO" id="jaX-4r-f96">
                             <rect key="frame" x="200" y="267" width="16" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="16" id="7fL-5f-pwa"/>
@@ -198,8 +198,8 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-vO-uTf">
-                    <rect key="frame" x="304" y="425.5" width="86" height="30"/>
-                    <state key="normal" title="최근 작성한 순">
+                    <rect key="frame" x="298" y="393" width="90" height="94.5"/>
+                    <state key="normal" title="최근 작성한 순 ">
                         <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -209,30 +209,49 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCn-OP-d0Q">
-                    <rect key="frame" x="20" y="491" width="366" height="300"/>
-                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memoFrameView" translatesAutoresizingMaskIntoConstraints="NO" id="hJu-CI-iKv">
+                    <rect key="frame" x="20" y="518" width="374" height="260"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzA-u4-jJd">
+                    <rect key="frame" x="27" y="524.5" width="360" height="243.5"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Ez-xE-e0z">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="243.5"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3Ez-xE-e0z" firstAttribute="top" secondItem="YzA-u4-jJd" secondAttribute="top" id="2Mn-Oy-xzK"/>
+                        <constraint firstAttribute="trailing" secondItem="3Ez-xE-e0z" secondAttribute="trailing" id="54R-EG-LWc"/>
+                        <constraint firstItem="3Ez-xE-e0z" firstAttribute="leading" secondItem="YzA-u4-jJd" secondAttribute="leading" id="PFT-74-2cO"/>
+                        <constraint firstAttribute="bottom" secondItem="3Ez-xE-e0z" secondAttribute="bottom" id="e2B-qO-3XH"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="hgK-tb-m0D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0Jt-ac-9nb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hJu-CI-iKv" secondAttribute="bottom" constant="84" id="4jd-aV-8CA"/>
                 <constraint firstItem="Igw-ap-jpi" firstAttribute="top" secondItem="hgK-tb-m0D" secondAttribute="bottom" constant="24" id="6cf-Lz-7CW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YzA-u4-jJd" secondAttribute="trailing" constant="27" id="CBS-2T-x3N"/>
                 <constraint firstItem="Igw-ap-jpi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="FYf-la-SLf"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SCn-OP-d0Q" secondAttribute="trailing" constant="28" id="ZWx-9b-Haj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hJu-CI-iKv" secondAttribute="trailing" constant="20" id="Ig8-ta-9tl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YzA-u4-jJd" secondAttribute="bottom" constant="94" id="Lai-CQ-pzp"/>
+                <constraint firstItem="YzA-u4-jJd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="27" id="QPq-T3-cql"/>
+                <constraint firstItem="YzA-u4-jJd" firstAttribute="top" secondItem="wNq-vO-uTf" secondAttribute="bottom" constant="37" id="W2M-Sj-Z5a"/>
                 <constraint firstItem="hgK-tb-m0D" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="euP-bt-OOD"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wNq-vO-uTf" secondAttribute="trailing" constant="24" id="hzy-fx-EvI"/>
-                <constraint firstItem="SCn-OP-d0Q" firstAttribute="top" secondItem="wNq-vO-uTf" secondAttribute="bottom" constant="35.5" id="mRp-9I-Aiz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wNq-vO-uTf" secondAttribute="trailing" constant="26" id="hzy-fx-EvI"/>
+                <constraint firstItem="hJu-CI-iKv" firstAttribute="top" secondItem="wNq-vO-uTf" secondAttribute="bottom" constant="30.5" id="oBW-vQ-1ia"/>
                 <constraint firstItem="hgK-tb-m0D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pTC-us-PJn"/>
-                <constraint firstItem="SCn-OP-d0Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="pWN-09-WjW"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SCn-OP-d0Q" secondAttribute="bottom" constant="71" id="vAP-af-KJh"/>
                 <constraint firstItem="wNq-vO-uTf" firstAttribute="centerY" secondItem="Igw-ap-jpi" secondAttribute="centerY" id="w7s-zM-NUI"/>
+                <constraint firstItem="hJu-CI-iKv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="zIO-uH-fjd"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
         </view>
     </objects>
     <resources>
-        <image name="runningManPink" width="256" height="256"/>
+        <image name="memoFrameView" width="327" height="260"/>
+        <image name="runningManBlack" width="256" height="256"/>
         <image name="temporalAvatar" width="256" height="256"/>
         <image name="writeButton" width="36" height="40"/>
         <namedColor name="mainColor">

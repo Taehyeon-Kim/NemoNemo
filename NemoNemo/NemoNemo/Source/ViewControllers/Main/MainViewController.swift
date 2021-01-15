@@ -15,18 +15,18 @@ class MainViewController: UIViewController {
     var totalMemo: Int = 0
     
     var contents: [String] = [
-        "내용1",
-        "내용2",
-        "내용3",
-        "내용4",
+        "Swift 문법",
+        "이번주 할 일",
+        "새로운 아이디어 ...",
+        "몰라 내용이 없어 ~",
         "내용5",
         "내용6",
-        "내용1",
-        "내용2",
-        "내용3",
-        "내용4",
-        "내용5",
-        "내용6",
+        "내용7",
+        "내용8",
+        "내용9",
+        "내용10",
+        "내용11",
+        "내용12",
     ]
     
     
@@ -93,9 +93,7 @@ class MainViewController: UIViewController {
        
         /// entitle
         entitleLabel.text = "@메모고수 '메모는 밥 먹듯이 하는거야\'"
-        
-//        memoListBackgroundView.layer.cornerRadius = 20
-//        memoListBackgroundView.layer.masksToBounds = true
+
     }
     
     // 뷰 연결
@@ -115,7 +113,7 @@ class MainViewController: UIViewController {
         weekMemoTitleLabel.font = UIFont.NEXONLv1GothicFontSize(weight: .Light, size: 12)
         totalMemoTitleLabel.font = UIFont.NEXONLv1GothicFontSize(weight: .Light, size: 12)
         
-        memoTotalCount.font = UIFont.NEXONLv1GothicFontSize(weight: .Bold, size: 24)
+        memoTotalCount.font = UIFont.NEXONLv1GothicFontSize(weight: .Bold, size: 22)
         sortType.titleLabel?.font = UIFont.NEXONLv1GothicFontSize(weight: .Regular, size: 14)
     }
     
