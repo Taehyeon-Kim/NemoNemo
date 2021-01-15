@@ -11,9 +11,10 @@ enum AssetsColor {
     
     // Main Color
     case mainColor
-    
     // Sub Color
     case subColor
+    
+    case defaultWhiteColor
 }
 
 extension UIColor {
@@ -26,6 +27,9 @@ extension UIColor {
         
     case .subColor:
         return UIColor(named: "subColor")!
+        
+    case .defaultWhiteColor:
+        return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             
     }
     

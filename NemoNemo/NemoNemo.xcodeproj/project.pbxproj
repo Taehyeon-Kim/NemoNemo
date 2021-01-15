@@ -7,31 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD00E2F825B17D7E00B30965 /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD00E2F625B17D7E00B30965 /* MemoTableViewCell.swift */; };
+		BD00E2F925B17D7E00B30965 /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD00E2F725B17D7E00B30965 /* MemoTableViewCell.xib */; };
+		BD00E2FF25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD00E2FE25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift */; };
 		BD38E5CF25AFE7D300D51994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5CE25AFE7D300D51994 /* AppDelegate.swift */; };
 		BD38E5D125AFE7D300D51994 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5D025AFE7D300D51994 /* SceneDelegate.swift */; };
-		BD38E5D325AFE7D300D51994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5D225AFE7D300D51994 /* ViewController.swift */; };
+		BD38E5D325AFE7D300D51994 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5D225AFE7D300D51994 /* MainViewController.swift */; };
 		BD38E5D825AFE7D400D51994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD38E5D725AFE7D400D51994 /* Assets.xcassets */; };
 		BD38E5DB25AFE7D400D51994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38E5D925AFE7D400D51994 /* LaunchScreen.storyboard */; };
 		BD38E5FD25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5FC25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift */; };
 		BD38E61925B00E1100D51994 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E61825B00E1100D51994 /* UIColor.swift */; };
+		BD38E61E25B018D800D51994 /* NEXONLv1GothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD38E61B25B018D700D51994 /* NEXONLv1GothicBold.ttf */; };
+		BD38E61F25B018D800D51994 /* NEXONLv1GothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD38E61C25B018D800D51994 /* NEXONLv1GothicLight.ttf */; };
+		BD38E62025B018D800D51994 /* NEXONLv1GothicRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD38E61D25B018D800D51994 /* NEXONLv1GothicRegular.ttf */; };
+		BD38E62925B0259100D51994 /* RoundBottomCorners + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E62825B0259100D51994 /* RoundBottomCorners + UIView.swift */; };
+		BD38E62D25B0302300D51994 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD38E62C25B0302300D51994 /* MainViewController.xib */; };
+		BDC2A93525B08F090029FE3D /* CustomProgressBar + Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2A93425B08F090029FE3D /* CustomProgressBar + Designable.swift */; };
+		BDC2A93B25B0933D0029FE3D /* CircleView + Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2A93A25B0933D0029FE3D /* CircleView + Designable.swift */; };
 		C39459EB3DCD096B4FBC5FC1 /* Pods_NemoNemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A551A428578A7FB1F0FE02B /* Pods_NemoNemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A551A428578A7FB1F0FE02B /* Pods_NemoNemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NemoNemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EDDD8A32F6B1D8A45AD205 /* Pods-NemoNemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemoNemo.debug.xcconfig"; path = "Target Support Files/Pods-NemoNemo/Pods-NemoNemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BD00E2F625B17D7E00B30965 /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
+		BD00E2F725B17D7E00B30965 /* MemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoTableViewCell.xib; sourceTree = "<group>"; };
+		BD00E2FE25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewExtension + MemoViewController.swift"; sourceTree = "<group>"; };
 		BD38E5CB25AFE7D300D51994 /* NemoNemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NemoNemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD38E5CE25AFE7D300D51994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD38E5D025AFE7D300D51994 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD38E5D225AFE7D300D51994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD38E5D225AFE7D300D51994 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BD38E5D725AFE7D400D51994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD38E5DA25AFE7D400D51994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD38E5DC25AFE7D400D51994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD38E5FC25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NEXONLv1Gothic + UIFont.swift"; sourceTree = "<group>"; };
-		BD38E60325AFF4A300D51994 /* NEXONLv1GothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicBold.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicBold.ttf"; sourceTree = "<group>"; };
-		BD38E60425AFF4A300D51994 /* NEXONLv1GothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicLight.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicLight.ttf"; sourceTree = "<group>"; };
-		BD38E60525AFF4A300D51994 /* NEXONLv1GothicRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicRegular.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicRegular.ttf"; sourceTree = "<group>"; };
 		BD38E61825B00E1100D51994 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		BD38E61B25B018D700D51994 /* NEXONLv1GothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicBold.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total 2/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicBold.ttf"; sourceTree = "<group>"; };
+		BD38E61C25B018D800D51994 /* NEXONLv1GothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicLight.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total 2/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicLight.ttf"; sourceTree = "<group>"; };
+		BD38E61D25B018D800D51994 /* NEXONLv1GothicRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicRegular.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total 2/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicRegular.ttf"; sourceTree = "<group>"; };
+		BD38E62825B0259100D51994 /* RoundBottomCorners + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundBottomCorners + UIView.swift"; sourceTree = "<group>"; };
+		BD38E62C25B0302300D51994 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BDC2A93425B08F090029FE3D /* CustomProgressBar + Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomProgressBar + Designable.swift"; sourceTree = "<group>"; };
+		BDC2A93A25B0933D0029FE3D /* CircleView + Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircleView + Designable.swift"; sourceTree = "<group>"; };
 		DF9D5E92A3CB44AD40688A4A /* Pods-NemoNemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemoNemo.release.xcconfig"; path = "Target Support Files/Pods-NemoNemo/Pods-NemoNemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +79,15 @@
 				DF9D5E92A3CB44AD40688A4A /* Pods-NemoNemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD00E2FB25B17D9000B30965 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD00E2F625B17D7E00B30965 /* MemoTableViewCell.swift */,
+				BD00E2F725B17D7E00B30965 /* MemoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		BD38E5C225AFE7D300D51994 = {
@@ -119,8 +145,10 @@
 		BD38E5E625AFE85900D51994 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BDC2A93225B08EC80029FE3D /* Designable */,
 				BD38E5FC25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift */,
 				BD38E61825B00E1100D51994 /* UIColor.swift */,
+				BD38E62825B0259100D51994 /* RoundBottomCorners + UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,7 +163,8 @@
 		BD38E5E825AFE86800D51994 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BD38E5D225AFE7D300D51994 /* ViewController.swift */,
+				BD38E62325B01C3D00D51994 /* Splash */,
+				BD38E62225B01C3600D51994 /* Main */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -151,9 +180,9 @@
 		BD38E5EA25AFE8AC00D51994 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				BD38E60325AFF4A300D51994 /* NEXONLv1GothicBold.ttf */,
-				BD38E60425AFF4A300D51994 /* NEXONLv1GothicLight.ttf */,
-				BD38E60525AFF4A300D51994 /* NEXONLv1GothicRegular.ttf */,
+				BD38E61B25B018D700D51994 /* NEXONLv1GothicBold.ttf */,
+				BD38E61C25B018D800D51994 /* NEXONLv1GothicLight.ttf */,
+				BD38E61D25B018D800D51994 /* NEXONLv1GothicRegular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -178,6 +207,33 @@
 			children = (
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		BD38E62225B01C3600D51994 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BD00E2FB25B17D9000B30965 /* Cell */,
+				BD38E5D225AFE7D300D51994 /* MainViewController.swift */,
+				BD38E62C25B0302300D51994 /* MainViewController.xib */,
+				BD00E2FE25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BD38E62325B01C3D00D51994 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BDC2A93225B08EC80029FE3D /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				BDC2A93425B08F090029FE3D /* CustomProgressBar + Designable.swift */,
+				BDC2A93A25B0933D0029FE3D /* CircleView + Designable.swift */,
+			);
+			path = Designable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +295,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD38E61F25B018D800D51994 /* NEXONLv1GothicLight.ttf in Resources */,
+				BD38E62D25B0302300D51994 /* MainViewController.xib in Resources */,
+				BD00E2F925B17D7E00B30965 /* MemoTableViewCell.xib in Resources */,
+				BD38E62025B018D800D51994 /* NEXONLv1GothicRegular.ttf in Resources */,
 				BD38E5DB25AFE7D400D51994 /* LaunchScreen.storyboard in Resources */,
 				BD38E5D825AFE7D400D51994 /* Assets.xcassets in Resources */,
+				BD38E61E25B018D800D51994 /* NEXONLv1GothicBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +354,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD38E5D325AFE7D300D51994 /* ViewController.swift in Sources */,
+				BD38E62925B0259100D51994 /* RoundBottomCorners + UIView.swift in Sources */,
+				BD38E5D325AFE7D300D51994 /* MainViewController.swift in Sources */,
 				BD38E5FD25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift in Sources */,
+				BDC2A93B25B0933D0029FE3D /* CircleView + Designable.swift in Sources */,
+				BDC2A93525B08F090029FE3D /* CustomProgressBar + Designable.swift in Sources */,
 				BD38E5CF25AFE7D300D51994 /* AppDelegate.swift in Sources */,
 				BD38E5D125AFE7D300D51994 /* SceneDelegate.swift in Sources */,
+				BD00E2F825B17D7E00B30965 /* MemoTableViewCell.swift in Sources */,
+				BD00E2FF25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift in Sources */,
 				BD38E61925B00E1100D51994 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
