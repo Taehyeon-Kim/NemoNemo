@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD00E2FF25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD00E2FE25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift */; };
+		BD0C5A2B25B93B8E00EC94C0 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C5A2A25B93B8E00EC94C0 /* MemoData.swift */; };
 		BD38E5CF25AFE7D300D51994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5CE25AFE7D300D51994 /* AppDelegate.swift */; };
 		BD38E5D125AFE7D300D51994 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5D025AFE7D300D51994 /* SceneDelegate.swift */; };
 		BD38E5D325AFE7D300D51994 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E5D225AFE7D300D51994 /* MainViewController.swift */; };
@@ -20,6 +21,8 @@
 		BD38E62025B018D800D51994 /* NEXONLv1GothicRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD38E61D25B018D800D51994 /* NEXONLv1GothicRegular.ttf */; };
 		BD38E62925B0259100D51994 /* RoundBottomCorners + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38E62825B0259100D51994 /* RoundBottomCorners + UIView.swift */; };
 		BD38E62D25B0302300D51994 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD38E62C25B0302300D51994 /* MainViewController.xib */; };
+		BD66FCA225B85D54001A97C9 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD66FCA025B85D54001A97C9 /* WriteViewController.swift */; };
+		BD66FCA325B85D54001A97C9 /* WriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD66FCA125B85D54001A97C9 /* WriteViewController.xib */; };
 		BDC2A93525B08F090029FE3D /* CustomProgressBar + Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2A93425B08F090029FE3D /* CustomProgressBar + Designable.swift */; };
 		BDC2A93B25B0933D0029FE3D /* CircleView + Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2A93A25B0933D0029FE3D /* CircleView + Designable.swift */; };
 		BDEED7FA25B1EC30009C3C0D /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEED7F825B1EC30009C3C0D /* MemoTableViewCell.swift */; };
@@ -31,6 +34,7 @@
 		8A551A428578A7FB1F0FE02B /* Pods_NemoNemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NemoNemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EDDD8A32F6B1D8A45AD205 /* Pods-NemoNemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemoNemo.debug.xcconfig"; path = "Target Support Files/Pods-NemoNemo/Pods-NemoNemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BD00E2FE25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewExtension + MemoViewController.swift"; sourceTree = "<group>"; };
+		BD0C5A2A25B93B8E00EC94C0 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 		BD38E5CB25AFE7D300D51994 /* NemoNemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NemoNemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD38E5CE25AFE7D300D51994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD38E5D025AFE7D300D51994 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		BD38E61D25B018D800D51994 /* NEXONLv1GothicRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NEXONLv1GothicRegular.ttf; path = "../../../../../../Downloads/NEXON_Lv1_Gothic_total 2/NEXON Lv1 Gothic_OTF_TTF/NEXON Lv1 Gothic_TTF/NEXONLv1GothicRegular.ttf"; sourceTree = "<group>"; };
 		BD38E62825B0259100D51994 /* RoundBottomCorners + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundBottomCorners + UIView.swift"; sourceTree = "<group>"; };
 		BD38E62C25B0302300D51994 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BD66FCA025B85D54001A97C9 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		BD66FCA125B85D54001A97C9 /* WriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteViewController.xib; sourceTree = "<group>"; };
 		BDC2A93425B08F090029FE3D /* CustomProgressBar + Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomProgressBar + Designable.swift"; sourceTree = "<group>"; };
 		BDC2A93A25B0933D0029FE3D /* CircleView + Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircleView + Designable.swift"; sourceTree = "<group>"; };
 		BDEED7F825B1EC30009C3C0D /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 		BD38E5E725AFE86300D51994 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BD0C5A2A25B93B8E00EC94C0 /* MemoData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +172,7 @@
 			children = (
 				BD38E62325B01C3D00D51994 /* Splash */,
 				BD38E62225B01C3600D51994 /* Main */,
+				BD66FC9F25B85D0B001A97C9 /* Write */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -225,6 +233,15 @@
 			children = (
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		BD66FC9F25B85D0B001A97C9 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				BD66FCA025B85D54001A97C9 /* WriteViewController.swift */,
+				BD66FCA125B85D54001A97C9 /* WriteViewController.xib */,
+			);
+			path = Write;
 			sourceTree = "<group>";
 		};
 		BDC2A93225B08EC80029FE3D /* Designable */ = {
@@ -297,6 +314,7 @@
 			files = (
 				BD38E61F25B018D800D51994 /* NEXONLv1GothicLight.ttf in Resources */,
 				BD38E62D25B0302300D51994 /* MainViewController.xib in Resources */,
+				BD66FCA325B85D54001A97C9 /* WriteViewController.xib in Resources */,
 				BDEED7FB25B1EC30009C3C0D /* MemoTableViewCell.xib in Resources */,
 				BD38E62025B018D800D51994 /* NEXONLv1GothicRegular.ttf in Resources */,
 				BD38E5DB25AFE7D400D51994 /* LaunchScreen.storyboard in Resources */,
@@ -355,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD38E62925B0259100D51994 /* RoundBottomCorners + UIView.swift in Sources */,
+				BD66FCA225B85D54001A97C9 /* WriteViewController.swift in Sources */,
 				BD38E5D325AFE7D300D51994 /* MainViewController.swift in Sources */,
 				BD38E5FD25AFEE1500D51994 /* NEXONLv1Gothic + UIFont.swift in Sources */,
 				BDC2A93B25B0933D0029FE3D /* CircleView + Designable.swift in Sources */,
@@ -362,6 +381,7 @@
 				BDEED7FA25B1EC30009C3C0D /* MemoTableViewCell.swift in Sources */,
 				BD38E5CF25AFE7D300D51994 /* AppDelegate.swift in Sources */,
 				BD38E5D125AFE7D300D51994 /* SceneDelegate.swift in Sources */,
+				BD0C5A2B25B93B8E00EC94C0 /* MemoData.swift in Sources */,
 				BD00E2FF25B17EB200B30965 /* UITableViewExtension + MemoViewController.swift in Sources */,
 				BD38E61925B00E1100D51994 /* UIColor.swift in Sources */,
 			);

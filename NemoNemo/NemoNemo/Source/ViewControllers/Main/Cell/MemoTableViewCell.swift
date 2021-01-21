@@ -31,10 +31,10 @@ class MemoTableViewCell: UITableViewCell {
     }
     
     func setupFont() {
-        titleLabel.font = UIFont.NEXONLv1GothicFontSize(weight: .Regular, size: 16)
+        titleLabel.font = UIFont.NEXONLv1GothicFontSize(weight: .Regular, size: 18)
     }
     
-    func setData(_ data: String) {
-        titleLabel.text = data
+    func setData(_ data: Memo) {
+        titleLabel.text = data.keyword
     }
 }

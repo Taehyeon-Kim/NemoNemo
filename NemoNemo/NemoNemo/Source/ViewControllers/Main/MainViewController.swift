@@ -6,28 +6,24 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MainViewController: UIViewController {
 
     // MARK: - Variables
     var dailyMemo: Int = 0
     var weeklyMemo: Int = 0
-    var totalMemo: Int = 0
+    var totalMemo: Int = 0 {
+        didSet {
+            totalMemoCount.text = "\(totalMemo)"
+            memoTotalCount.text = "메모 \(totalMemo)개"
+        }
+    }
     
-    var contents: [String] = [
-        "Swift 문법",
-        "이번주 할 일",
-        "새로운 아이디어 ...",
-        "몰라 내용이 없어 ~",
-        "내용5",
-        "내용6",
-        "내용7",
-        "내용8",
-        "내용9",
-        "내용10",
-        "내용11",
-        "내용12",
-    ]
+    var realm: Realm?
+    var items: Results<Memo>?
+    var notificationToken: NotificationToken?
+    var dummyMemoList: [Memo] = []
     
     
     // MARK: - IBOutlet
@@ -65,28 +61,47 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dailyMemo = 2
-        weeklyMemo = 35
-        totalMemo = 237
-        
+        setupTableView()
+        loadDataFromRealm()
         setupDefault()
         setupFonts()
+    }
+
+    @IBAction func writeButtonClicked(_ sender: Any) {
         
+        let writeVC = WriteViewController(nibName: "WriteViewController", bundle: nil)
+        writeVC.modalPresentationStyle = .fullScreen
+        self.present(writeVC, animated: true, completion: nil)
+    }
+    
+    // MARK: - Setup
+    func loadDataFromRealm() {
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        realm  = try? Realm()
+        
+        items = realm?.objects(Memo.self)
+
+        notificationToken = items?.observe({ (change) in
+//            print("change :", change)
+            self.totalMemo = self.items?.count ?? -1
+            self.memoTableView.reloadData()
+        })
+    }
+    
+    func setupTableView() {
         memoTableView.delegate = self
         memoTableView.dataSource = self
         memoTableView.register(UINib(nibName: "MemoTableViewCell", bundle: nil), forCellReuseIdentifier: "MemoTableViewCell")
     }
 
     
-    // MARK: - Setup
-    
     // 기본 UI 세팅
     func setupDefault() {
+
         
         dailyMemoCount.text = String(dailyMemo)
         weekMemoCount.text = String(weeklyMemo)
-        totalMemoCount.text = String(totalMemo)
-        memoTotalCount.text = "메모 \(self.totalMemo)개"
         
         /// nickname
         nickNameLabel.text = "내모내모"
@@ -116,10 +131,7 @@ class MainViewController: UIViewController {
         memoTotalCount.font = UIFont.NEXONLv1GothicFontSize(weight: .Bold, size: 22)
         sortType.titleLabel?.font = UIFont.NEXONLv1GothicFontSize(weight: .Regular, size: 14)
     }
-    
-    func registerNib() {
-        
-    }
 
 }
+
 
