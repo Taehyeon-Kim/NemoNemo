@@ -82,12 +82,66 @@ class MainViewController: UIViewController {
         
         items = realm?.objects(Memo.self)
 
-        notificationToken = items?.observe({ (change) in
+        notificationToken = items?.observe({ [unowned self] (changes) in
 //            print("change :", change)
-            self.totalMemo = self.items?.count ?? -1
+            
+            switch changes {
+            case .initial (let memos):
+                print("Initial count: \(memos.count)")
+                
+                
+            case .update(let memos, let deletions, let insertions, let modifications):
+
+                if deletions.count > 0 {
+                    
+                    deleteRow(at: deletions)
+                    print("deletion")
+                }
+                
+                if insertions.count > 0 {
+                    
+                    insertRow(at: insertions)
+                    print("insertion")
+                }
+                
+                if modifications.count > 0 {
+                    updateRow(at: modifications)
+                    
+                }
+
+                print("Update count: \(memos.count)")
+            case .error(let error):
+                fatalError("\(error)")
+            }
+            
+            self.totalMemo = items?.count ?? -1
             self.memoTableView.reloadData()
+
+            
         })
     }
+    
+    private func insertRow(at indexs: [Int]) {
+        memoTableView.beginUpdates()
+        let indexPaths = indexs.map { IndexPath(item: $0, section: 0) }
+        memoTableView.insertRows(at: indexPaths, with: .automatic)
+        memoTableView.endUpdates()
+        
+    }
+    
+    private func deleteRow(at indexs: [Int]) {
+        memoTableView.beginUpdates()
+        let indexPaths = indexs.map { IndexPath(item: $0, section: 0) }
+        memoTableView.deleteRows(at: indexPaths, with: .automatic)
+        memoTableView.endUpdates()
+        
+    }
+    
+    private func updateRow(at indexs: [Int]) {
+        let indexPaths = indexs.map { IndexPath(item: $0, section: 0) }
+        memoTableView.reloadRows(at: indexPaths, with: .automatic)
+    }
+
     
     func setupTableView() {
         memoTableView.delegate = self
@@ -99,15 +153,14 @@ class MainViewController: UIViewController {
     // 기본 UI 세팅
     func setupDefault() {
 
-        
         dailyMemoCount.text = String(dailyMemo)
         weekMemoCount.text = String(weeklyMemo)
         
         /// nickname
-        nickNameLabel.text = "내모내모"
+        nickNameLabel.text = "11th 태끼"
        
         /// entitle
-        entitleLabel.text = "@메모고수 '메모는 밥 먹듯이 하는거야\'"
+        entitleLabel.text = "@메모왕초보 '처음 습관을 들이는 단계\'"
 
     }
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+extension MainViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items?.count ?? -1
@@ -28,5 +28,22 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    
+}
+
+extension MainViewController: UITableViewDelegate {
+    
+    // 오른쪽 스와이프
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "삭제", handler: { (ac:UIContextualAction, UIView, success: (Bool) -> Void) in
+
+            try! self.realm?.write {
+                self.realm?.delete(self.dummyMemoList[indexPath.row])
+            }
+            
+        })
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
     
 }
